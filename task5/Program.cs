@@ -10,11 +10,11 @@
 
     if(num1 > num2)
     {
-        Console.WriteLine("Первое число больше второго ");
+        Console.WriteLine("Первое число " + num1 + " больше чем второе " + num2 + " на " + (num1 - num2));
     }
     else
     {
-        Console.WriteLine("Второе число больше первого ");    
+        Console.WriteLine("Второе число " + num2 + " больше чем первое " + num1 + " на " + (num2 - num1) );    
     }
-    
+
   
