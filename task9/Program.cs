@@ -6,8 +6,13 @@
 
 Console.WriteLine("Введите трёхзначное число ");
 int a = int.Parse(Console.ReadLine());
+if (a > 1000 || a < 100)
+Console.Write("Вы ввели неправильное число ");
+else
+{
 int secondDigit = (a / 10 % 10);
-Console.WriteLine($"Вторая цифра {secondDigit} числа {a} ");
+Console.WriteLine($"Вторая цифра числа {a} - {secondDigit} ");
+}
 
 // Я понимаю, что не совсем корректное решение, т.к. в int secondDigit = (a / 10 % 10) перед знаком деления с остатком 
 // в число "10" придется добавлять "0" в зависимости от того какое число буду вводить четырех/пятизначное.
